@@ -1,0 +1,60 @@
+lovely_loveseat_description = "Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white."
+lovely_loveseat_price = 254.00
+
+stylish_setee_description = "Stylish Setee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black."
+stylish_setee_price = 180.50
+
+luxurious_lamp_description = "Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade."
+luxurious_lamp_price = 52.15
+
+sales_tax = .088
+
+#=========================================================
+
+customer_1_total = 0
+customer_1_itemisation = ""
+
+#customer 1 purchased the Lovely Loveseat
+customer_1_total += lovely_loveseat_price
+customer_1_itemisation += lovely_loveseat_description
+
+#customer 1 also purched the Luxurious Lamp
+customer_1_total += luxurious_lamp_price
+customer_1_itemisation += luxurious_lamp_description
+
+#customer 1 checkout
+#customer 1 sales tax being added to the total
+customer_1_tax = customer_1_total * sales_tax
+customer_1_total += customer_1_tax
+
+#customer 1 reciept
+print("Customer One Items: ")
+print(customer_1_itemisation)
+print(" ")
+print("Customer One Total: ")
+print(customer_1_total)
+
+#=========================================================
+
+customer_2_total = 0
+customer_2_itemisation = ""
+
+#customer 2 purched the Stylish Setee
+customer_2_total += stylish_setee_price
+customer_2_itemisation += stylish_setee_description
+
+#customer 2 purched the Luxurious Lamp
+customer_2_total += luxurious_lamp_price
+customer_2_itemisation += luxurious_lamp_description
+
+#customer 2 checkout
+#customer 2 sales tax being added to the total 
+customer_2_tax = customer_2_total * sales_tax
+customer_2_total += customer_2_tax
+
+#customer 2 reciept
+print("Customer Two Items: ")
+print(customer_2_itemisation)
+print("")
+print("Customer Two Total: ")
+print(customer_2_total)
